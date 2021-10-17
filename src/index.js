@@ -3,16 +3,13 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import MultiPageBrowserRouter from "./MultiPageBrowserRouter";
-import FetchUsersFromApi from "./FetchUsersFromApi";
 import MultiPageFetchUserData from "./MultiPageFetchUserData";
-import MultiPageFetchUsersApi from "./MultiPageFetchUsersApi";
 
 ReactDOM.render(
   <React.StrictMode>
-  {/* To create multipage in react render the BrowserRouter object */}
+    {/* To create multipage in react render the BrowserRouter object */}
     <BrowserRouter>
-      <MultiPageFetchUserData/>
+      <MultiPageFetchUserData />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

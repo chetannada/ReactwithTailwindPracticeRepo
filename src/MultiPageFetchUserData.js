@@ -1,7 +1,6 @@
 import React from "react";
 import { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./Home";
 import MultiPageFetchUsersApi from "./MultiPageFetchUsersApi";
 
 class MultiPageFetchUserData extends Component {
@@ -14,7 +13,6 @@ class MultiPageFetchUserData extends Component {
             <span> | </span>
             <Link to={"/users"}>Multi Page Fetch User Data</Link>
           </h1>
-          <nav></nav>
           <hr />
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
