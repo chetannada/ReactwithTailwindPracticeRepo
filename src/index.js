@@ -3,13 +3,13 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import MultiPageFetchUserData from "./MultiPageFetchUserData";
+import AxiosFetchUserData from "./AxiosFetchUserData";
 
 ReactDOM.render(
   <React.StrictMode>
     {/* To create multipage in react render the BrowserRouter object */}
     <BrowserRouter>
-      <MultiPageFetchUserData />
+      <AxiosFetchUserData />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
