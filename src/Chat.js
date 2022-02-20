@@ -1,23 +1,21 @@
 import React from "react";
 import { Component } from "react";
-import reactDom from "react-dom";
-import "./Chat.css";
 
+import "./Chat.css";
 
 class Chat extends Component {
   constructor() {
     super();
 
     // Set initial state
-    this.state = { msg: "You have a new message!" };
+    this.state = {message: null};
     // Binding this keyword
-    // this.handleClick = this.handleClick.bind(this)
+    // this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
     // Changing state
-    this.setState({ msg: "Have a good day!" });
-    
+    this.setState({message:"Have e a good day!"});
   }
 
   render() {
@@ -29,7 +27,7 @@ class Chat extends Component {
           </div>
           <div>
             <div className="chatmaintext ">Let's Chat</div>
-            <p className="chatstatetext">{this.state.msg}</p>
+            <p className="chatstatetext">{this.state.message}</p>
           </div>
         </div>
         {/* Set click handler */}
