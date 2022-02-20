@@ -1,15 +1,16 @@
-// React Props
-// React components can accept data passed to them called props.
+// React Conditionals
+// React components and elements can be conditionally displayed.
 
-// Props are passed from the parent component to a child component.
+// To use the ternary operator, wrap the entire conditional in curly braces.
 
-// Here we are passing a prop name from App to the User component.
 import User from "./User";
+import Home from "../Home";
 
 function App(){
+    const isTrue = true;
     return(
         <>
-        <User name="Chetan Nada" age="32"></User>
+        {isTrue ? <User></User> : <Home></Home>}
         </>
     )
 }
