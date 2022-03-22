@@ -1,16 +1,9 @@
-// React Lists
-// Lists of React components can be output using the .map() function.
-
-// .map() allows us to loop over arrays of data and output JSX.
-import User from "./User";
+import { useState } from "react";
 function App(){
-    const person = ["Chetan", "Ujesh", "Nimisha", "Jeny", "Nilam"];
-    return(
-        <>
-            {person.map((person) => (
-                <User key={person} name={person}/>
-            ))}
-        </>
-    )
+    const [count, setCount] = useState(0);
+    function counter(){
+      setCount(count + 1);
+    }
+    return <button onClick={counter}>Count is {count}</button>
 }
 export default App;
